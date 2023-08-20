@@ -17,7 +17,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!-- Styles -->
-    @livewireStyles
+    {{-- @livewireStyles --}}
 </head>
 
 <body class="dark:bg-slate-900 min-h-[75rem] font-sans antialiased">
@@ -35,7 +35,7 @@
     @livewire('layout.footer')
     @stack('modals')
 
-    @livewireScripts
+    {{-- @livewireScripts --}}
 </body>
 
 </html>
