@@ -20,6 +20,8 @@ Route::get('about', [PagesController::class, 'about'])->name('about');
 Route::get('products', [PagesController::class, 'products'])->name('products');
 Route::get('services', [PagesController::class, 'services'])->name('services');
 Route::get('contact', [PagesController::class, 'contact'])->name('contact');
+Route::get('privacy', [PagesController::class, 'privacy'])->name('privacy');
+Route::get('terms', [PagesController::class, 'terms'])->name('terms');
 
 Route::middleware([
     'auth:sanctum',

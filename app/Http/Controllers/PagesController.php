@@ -22,4 +22,10 @@ class PagesController extends Controller
     public function contact() {
         return view('contact');
     }
+    public function privacy() {
+        return view('privacy');
+    }
+    public function terms() {
+        return view('terms');
+    }
 }
