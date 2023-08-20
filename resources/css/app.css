@@ -19,3 +19,14 @@
     border: 1px solid red;
     padding:2px;
 } */
+
+.bg-color {
+    pointer-events: none;
+    content: "";
+    position: fixed;
+    inset: 0px;
+    z-index: -1;
+    display: block;
+    transition: opacity 0.5s ease-in-out 0s;
+    background: linear-gradient(to right bottom, rgb(77, 84, 209), rgb(165, 28, 123) 50%, rgb(238, 74, 55) 100%) center center;
+}

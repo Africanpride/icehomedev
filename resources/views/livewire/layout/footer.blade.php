@@ -2,8 +2,8 @@
     <!-- Grid -->
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
       <div class="col-span-full hidden md:col-span-1 md:block">
-        <a class="flex-none text-xl font-semibold dark:text-white" href="#" aria-label="Brand">Brand</a>
-        <p class="mt-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">© 2022 Preline.</p>
+        <a class="flex-none text-xl font-semibold dark:text-white" href="{{ route('home') }}" aria-label="Brand"><x-brand /></a>
+        <p class="mt-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">&copy; {{ now()->year }} All Rights Reserved.</p>
       </div>
       <!-- End Col -->
 
@@ -23,7 +23,7 @@
         <h4 class="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">Company</h4>
 
         <div class="mt-3 grid space-y-3 text-sm">
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">About us</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="{{ route('about') }}">About us</a></p>
           <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">Blog</a></p>
           <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">Careers</a> <span class="inline text-blue-600 dark:text-blue-500">— We're hiring</span></p>
           <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">Customers</a></p>

@@ -14,11 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('about', [PagesController::class, 'about']);
+Route::get('/', [PagesController::class, 'home'])->name('home');
+Route::get('about', [PagesController::class, 'about'])->name('about');
+Route::get('products', [PagesController::class, 'products'])->name('products');
+Route::get('services', [PagesController::class, 'services'])->name('services');
+Route::get('contact', [PagesController::class, 'contact'])->name('contact');
 
 Route::middleware([
     'auth:sanctum',
