@@ -16,8 +16,12 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            container: {
+                center: true,
+            },
         },
     },
 
-    plugins: [forms, typography],
+    plugins: [forms, typography, require('preline/plugin'),
+    ],
 };
