@@ -6,7 +6,7 @@
         <h1 class="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">
           Contact us
         </h1>
-        <p class="mt-1 text-gray-600 dark:text-gray-400">
+        <p class="mt-1 text-gray-600 dark:text-gray-400 max-w-xl container">
             {{ __('Reach out to us for a discussion on how we can assist you. We\'re eager to explore ways to provide our support.') }}
             </p>
 
@@ -73,7 +73,7 @@
             </svg>
             <div>
               <h3 class="font-semibold text-gray-800 dark:text-gray-200">Knowledgebase</h3>
-              <p class="mt-1 text-sm text-gray-500">We're here to help with any questions or code.</p>
+              <p class="mt-1 text-sm text-gray-500">We're here to help with any questions.</p>
               <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">
                 Contact support
                 <svg class="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,8 +91,8 @@
               <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
             </svg>
             <div>
-              <h3 class="font-semibold text-gray-800 dark:text-gray-200">FAQ</h3>
-              <p class="mt-1 text-sm text-gray-500">Search our FAQ for answers to anything you might ask.</p>
+              <h3 class="font-semibold text-gray-800 dark:text-gray-200">Snail Mail Correspondence</h3>
+              <p class="mt-1 text-sm text-gray-500">P. O. Box 123456</p>
               <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">
                 Visit FAQ
                 <svg class="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +110,7 @@
               <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"/>
             </svg>
             <div>
-              <h3 class="font-semibold text-gray-800 dark:text-gray-200">Developer APIs</h3>
+              <h3 class="font-semibold text-gray-800 dark:text-gray-200">Business Development Team</h3>
               <p class="mt-1 text-sm text-gray-500">Check out our development quickstart guide.</p>
               <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">
                 Contact sales
@@ -130,8 +130,8 @@
             <div>
               <h3 class="font-semibold text-gray-800 dark:text-gray-200">Contact us by email</h3>
               <p class="mt-1 text-sm text-gray-500">If you wish to write us an email instead please use</p>
-              <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">
-                example@site.com
+              <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="mailto:info@icehomedev.com">
+                info@icehomedev.com
               </a>
             </div>
           </div>

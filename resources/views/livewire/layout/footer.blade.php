@@ -32,14 +32,12 @@
                 <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                         href="{{ route('about') }}">About us</a></p>
                 <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                        href="#">Blog</a></p>
+                        href="#">Newsroom</a></p>
                 <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                         href="#">Careers</a> <span class="inline text-blue-600 dark:text-blue-500">— We're
                         hiring</span></p>
                 <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                         href="#">Customers</a></p>
-                <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                        href="#">Newsroom</a></p>
                 <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                         href="#">Sitemap</a></p>
             </div>
@@ -55,7 +53,7 @@
                 <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                         href="#">Help & Support</a></p>
                 <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                        href="#">eBook</a></p>
+                        href="#">Publications</a></p>
                 <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                         href="#">What's New</a></p>
                 <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
