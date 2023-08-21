@@ -183,12 +183,12 @@
                     <p class="dark:text-gray-400">Chief Executive Officer</p>
                 </div>
                 <div class="flex flex-col justify-center m-8 text-center">
-                    <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="{{ asset('images/ceo2.jpg') }}">
+                    <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="{{ asset('images/suglo.jpg') }}">
                     <p class="text-xl font-semibold leadi">Emmanuel Y. Suglo</p>
                     <p class="dark:text-gray-400">Operations Director</p>
                 </div>
                 <div class="flex flex-col justify-center m-8 text-center">
-                    <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="{{ asset('images/ceo2.jpg') }}">
+                    <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="{{ asset('images/amadu.jpg') }}">
                     <p class="text-xl font-semibold leadi">Hammah Amadu</p>
                     <p class="dark:text-gray-400">Projects Manager</p>
                 </div>

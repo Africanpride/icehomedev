@@ -76,10 +76,10 @@
           </div> --}}
 
           <a class="flex items-center gap-x-2 font-extrabold text-base text-gray-500 hover:text-yellow-600 sm:border-l
-           sm:border-gray-300/20 sm:my-6 sm:pl-3 dark:border-gray-700/50 dark:text-gray-400 dark:hover:text-yellow-500" href="#">
-            {{  __('Hotline:') }}
+           sm:border-gray-300/20 sm:my-6 sm:pl-3 dark:border-gray-700/50 dark:text-gray-400 dark:hover:text-yellow-500" href="tel:+251944245965">
+            {{ __('Hotline:') }}
             <x-lucide-vibrate class="w-5 h-5 text-current" />
-            +233 555 99658
+            {{__('+251944245965') }}
           </a>
           <a class="hs-dark-mode-active:block hidden hs-dark-mode" href="javascript:;" data-hs-theme-click-value="light">
             <span class="group inline-flex flex-shrink-0 justify-center items-center h-9 w-9 font-medium rounded-full text-gray-800 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800">

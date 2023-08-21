@@ -104,7 +104,7 @@
                         <div class="grow mt-4 sm:mt-0 sm:ml-6 px-4 sm:px-0">
                             <h3
                                 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-300 dark:group-hover:text-white">
-                                Financial Services
+                                Construction Services
                             </h3>
                             <p class="mt-3 text-gray-600 dark:text-gray-400">
                                 Produce professional, reliable streams easily leveraging Preline's innovative broadcast
@@ -137,7 +137,7 @@
                         <div class="grow mt-4 sm:mt-0 sm:ml-6 px-4 sm:px-0">
                             <h3
                                 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-300 dark:group-hover:text-white">
-                                Construction Services
+                                Financial Services
                             </h3>
                             <p class="mt-3 text-gray-600 dark:text-gray-400">
                                 Optimize your in-person experience with best-in-class capabilities like badge printing

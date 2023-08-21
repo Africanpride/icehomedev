@@ -9,6 +9,9 @@ class PagesController extends Controller
     public function home() {
         return view('home');
     }
+    public function maintenance() {
+        return view('maintenance');
+    }
     public function about() {
         return view('about');
     }
