@@ -172,6 +172,30 @@
         </div>
     </section>
 
+    <section class="py-6 dark:bg-gray-800 dark:text-gray-100">
+        <div class="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
+            <h1 class="text-4xl font-bold leadi text-center sm:text-5xl">Our team</h1>
+            <p class="max-w-2xl text-center dark:text-gray-400">ICE Home Development excels in construction and energy. Our portfolio boasts sustainable solutions like renewable installations, energy-efficient designs, and management systems, addressing global energy demands effectively. </p>
+            <div class="flex flex-row flex-wrap-reverse justify-center">
+                <div class="flex flex-col justify-center m-8 text-center">
+                    <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="{{ asset('images/ceo2.jpg') }}">
+                    <p class="text-xl font-semibold leadi">Dr. Rafie L. Noushad</p>
+                    <p class="dark:text-gray-400">Chief Executive Officer</p>
+                </div>
+                <div class="flex flex-col justify-center m-8 text-center">
+                    <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="{{ asset('images/ceo2.jpg') }}">
+                    <p class="text-xl font-semibold leadi">Emmanuel Y. Suglo</p>
+                    <p class="dark:text-gray-400">Operations Director</p>
+                </div>
+                <div class="flex flex-col justify-center m-8 text-center">
+                    <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="{{ asset('images/ceo2.jpg') }}">
+                    <p class="text-xl font-semibold leadi">Hammah Amadu</p>
+                    <p class="dark:text-gray-400">Projects Manager</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
     @livewire('call-to-action',['message' => 'Explore Our Projects', 'action' => 'Lets Get Started'])
 
 

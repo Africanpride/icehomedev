@@ -73,10 +73,10 @@
                 {{ __('                "ICE Home Development & Construction delivers exceptional construction, prioritizing quality, innovation, professionalism; fostering growth, forging enduring client partnerships."') }}
             </p>
             <div class=" justify-center space-x-3 flex">
-                <img src="{{ asset('images/building2.jpg') }}" alt=""
-                    class="w-20 h-20 bg-center bg-cover rounded-md  dark:bg-gray-700">
+                <img src="{{ asset('images/ceo2.jpg') }}" alt=""
+                    class="w-20 h-20 bg-center bg-cover rounded-full dark:bg-gray-700">
                 <div>
-                    <p class="leadi">Name of CEO/Board Chairman.</p>
+                    <p class="leadi">Dr. Rafie L. Noushad</p>
                     <p class="text-sm leadi dark:text-gray-300">CEO, IceHomeDev</p>
                     <a class="flex items-center py-2 space-x-1 text-sm dark:text-violet-400"
                         href="{{ route('about') }}">
@@ -97,7 +97,7 @@
                     <div class="sm:flex">
                         <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
                             <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full absolute top-0 left-0 object-cover rounded-xl"
-                                src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8}&auto=format&fit=crop&w=2070&q=80"
                                 alt="Image Description">
                         </div>
 
