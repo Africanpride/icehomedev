@@ -13,9 +13,13 @@
             <div
                 class="bg-{{ $primaryColor }}-600 h-auto p-8 md:p-16 rounded-2xl flex flex-col justify-center text-left">
                 <div class="mx-auto max-w-xl text-left">
-                    <h2 class="text-2xl font-extrabold text-{{ $secondaryColor ?? 'white' }} md:text-2xl font-['poppins'] uppercase">
+
+                    <h2 class="text-2xl {{ $secondaryColor ?? "text-yellow-300" }} font-bold md:text-3xl md:leading-tight">
                        {{ $title }}
                     </h2>
+                    {{-- <h2 class="text-2xl font-extrabold text-{{ $secondaryColor ?? 'white' }} md:text-2xl font-['poppins'] uppercase">
+                       {{ $title }}
+                    </h2> --}}
 
                     <p class="mt-4  sm:text-xl/relaxed leading-loose  font-['figtree'] text-{{ $primaryColor ?? "yellow" }}-100">
                         {{ $content }}
