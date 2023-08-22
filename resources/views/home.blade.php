@@ -69,19 +69,20 @@
             <img src="{{ asset('images/helmet.svg') }}" class="w-32 h-32  " alt="">
 
             <p
-                class="px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-4xl lg:max-w-2xl xl:max-w-4xl dark:text-gray-300 text-['inter']">
-                {{ __('                "ICE Home Development & Construction delivers exceptional construction, prioritizing quality, innovation, professionalism; fostering growth, forging enduring client partnerships."') }}
+                class="px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-4xl lg:max-w-2xl
+                 xl:max-w-4xl dark:text-gray-300 text-['inter']">
+                {{ __('"ICE Home Development & Construction delivers exceptional construction, prioritizing quality, innovation, professionalism; fostering growth, forging enduring client partnerships."') }}
             </p>
             <div class=" justify-center space-x-3 flex">
                 <img src="{{ asset('images/ceo2.jpg') }}" alt=""
                     class="w-20 h-20 bg-center bg-cover rounded-full dark:bg-gray-700">
                 <div>
-                    <p class="leadi">Dr. Rafie L. Noushad</p>
-                    <p class="text-sm leadi dark:text-gray-300">CEO, IceHomeDev</p>
+                    <p class="lead font-bold">Dr. Rafie L. Noushad</p>
+                    <p class="text-sm leadi dark:text-gray-300 italic">CEO, IceHomeDev</p>
                     <a class="flex items-center py-2 space-x-1 text-sm dark:text-violet-400"
                         href="{{ route('about') }}">
-                        <span>Read IceHomeDev story</span>
-                        <x-lucide-chevron-right class="text-current w-5 h-5" />
+                        <span>Read More</span>
+                        <x-lucide-arrow-right class="text-current w-5 h-5" />
                     </a>
                 </div>
             </div>
@@ -94,24 +95,24 @@
             <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-10">
                 <!-- Card -->
                 <a class="group rounded-xl overflow-hidden" href="#">
-                    <div class="sm:flex">
+                    <div class="sm:flex place-items-center">
                         <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
                             <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full absolute top-0 left-0 object-cover rounded-xl"
-                                src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8}&auto=format&fit=crop&w=2070&q=80"
-                                alt="Image Description">
+                                src="{{ asset('images/services/service007.jpg') }}" alt="Image Description">
                         </div>
 
-                        <div class="grow mt-4 sm:mt-0 sm:ml-6 px-4 sm:px-0">
+                        <div class="grow mt-4 sm:mt-0 sm:ml-6 px-4 sm:px-0 place-items-center">
                             <h3
                                 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-300 dark:group-hover:text-white">
                                 Construction Services
                             </h3>
-                            <p class="mt-3 text-gray-600 dark:text-gray-400">
-                                Produce professional, reliable streams easily leveraging Preline's innovative broadcast
-                                studio
+                            <p class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                Our company specializes in residential, commercial, and industrial construction, as well
+                                as infrastructure development. We offer services ranging from renovation and remodeling
+                                to meet diverse project needs.
                             </p>
                             <p
-                                class="mt-4 inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium">
+                                class="mt-3 inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium">
                                 Read more
                                 <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16"
                                     fill="none">
@@ -124,28 +125,26 @@
                     </div>
                 </a>
                 <!-- End Card -->
-
                 <!-- Card -->
                 <a class="group rounded-xl overflow-hidden" href="#">
-                    <div class="sm:flex">
+                    <div class="sm:flex place-items-center">
                         <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
                             <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full absolute top-0 left-0 object-cover rounded-xl"
-                                src="https://images.unsplash.com/photo-1668906093328-99601a1aa584?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=986&q=80"
-                                alt="Image Description">
+                                src="{{ asset('images/services/service011.jpg') }}" alt="Image Description">
                         </div>
 
-                        <div class="grow mt-4 sm:mt-0 sm:ml-6 px-4 sm:px-0">
+                        <div class="grow mt-4 sm:mt-0 sm:ml-6 px-4 sm:px-0 place-items-center">
                             <h3
                                 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-300 dark:group-hover:text-white">
                                 Financial Services
                             </h3>
-                            <p class="mt-3 text-gray-600 dark:text-gray-400">
-                                Optimize your in-person experience with best-in-class capabilities like badge printing
-                                and
-                                lead retrieval
+                            <p class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                We provide comprehensive funding solutions for construction projects, encompassing
+                                project financing, equity investment, and debt financing to ensure successful
+                                realization of your vision.
                             </p>
                             <p
-                                class="mt-4 inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium">
+                                class="mt-3 inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium">
                                 Read more
                                 <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16"
                                     fill="none">
@@ -158,9 +157,6 @@
                     </div>
                 </a>
                 <!-- End Card -->
-
-
-
             </div>
             <!-- End Grid -->
         </div>

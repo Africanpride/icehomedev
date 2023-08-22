@@ -1,7 +1,7 @@
 <section>
     <div class="container py-16 px-4">
         <div
-            class="flex flex-col items-center gap-4 rounded-lg bg-yellow-600 p-6 shadow-lg sm:flex-row sm:justify-between">
+            class="flex flex-col items-center gap-4 rounded-lg bg-yellow-600 p-6 shadow sm:flex-row sm:justify-between">
             <strong class="text-xl text-white sm:text-xl">
                 {{ $message }}
             </strong>

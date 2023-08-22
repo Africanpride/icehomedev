@@ -1,5 +1,5 @@
 <section
-class="relative py-8 md:py-60  bg-cover bg-center bg-no-repeat" style="background-image: url('{{ asset('images/construction3.jpg') }}');
+class="relative py-8 md:py-60  bg-cover bg-center bg-no-repeat" style="background-image: url('{{ asset('images/services/service051.jpg') }}');
 " >
 <div class="absolute inset-0 bg-black/80 ">
 </div>

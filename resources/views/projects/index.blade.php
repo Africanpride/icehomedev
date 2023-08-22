@@ -1,25 +1,59 @@
 <x-front-layout>
 
-    <section>
-        <x-page-intro
-        primaryColor="blue"
-        secondaryColor="white"
-        firstImage="{{ asset('images/meeting.jpg') }}"
-        secondImage="{{ asset('images/services/service036.jpg') }}"
-         >
-            <x-slot name="title"> {{ __('Ice Homes Development & Construction: Pioneering Excellence in Diverse Construction') }}</x-slot>
-            <x-slot name="content"> {{ __('Since our inception, ICE Home Development and Construction has successfully completed numerous projects across various sectors, including residential, commercial, and industrial construction. ') }}</x-slot>
-
-        </x-page-intro>
-
-    </section>
-
 <section>
-    <x-hero-with-image>
+    <x-page-intro
+    primaryColor="red"
+    secondaryColor="white"
+    firstImage="{{ asset('images/services/service038.jpg') }}"
+    secondImage="{{ asset('images/services/service036.jpg') }}"
+     >
+        <x-slot name="title"> {{ __('  Trusted excellence in complex construction Projects.') }}</x-slot>
+        <x-slot name="content"> {{ __('Over the years, we have built a strong reputation for delivering high-quality construction projects that meet and exceed client expectations. Our commitment to excellence and attention to detail have earned us the trust and loyalty of our clients, who rely on us for their most complex and demanding construction needs.') }}</x-slot>
 
-    </x-hero-with-image>
+    </x-page-intro>
+
 </section>
 
+    <section
+        class="relative bg-[url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)] bg-cover bg-center bg-no-repeat hidden">
+        <div class="absolute inset-0 bg-black/75 ">
+        </div>
+
+        <div
+            class="relative mx-auto max-w-screen-xl px-4 py-28 sm:px-6 md:flex md:h-screen md:items-center md:px-8 text-white ">
+            <div class="max-w-5xl ">
+                <h1 class="text-4xl font-thin md:text-4xl font-['inter'] uppercase max-w-3xl">
+                    About <span class="font-bold">ICE Home
+                        <span class=" text-yellow-500">
+                            Development and Construction
+                        </span></span>
+                </h1>
+
+                <p class="mt-4  sm:text-xl/relaxed leading-loose  font-['figtree']">
+                    Since our inception, ICE Home Development and Construction has successfully completed numerous
+                    projects across various sectors, including residential, commercial, and industrial construction. Our
+                    team of skilled professionals, including architects, engineers, project managers, and construction
+                    workers, bring a wealth of expertise and knowledge to every project we undertake.
+                </p>
+
+                <div class="mt-8 flex flex-wrap gap-4 text-center">
+                    <a href="#"
+                        class="block w-full rounded bg-yellow-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-yellow-700 focus:outline-none focus:ring active:bg-yellow-500 sm:w-auto">
+                        Get Started
+                    </a>
+
+                    <a href="#"
+                        class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-yellow-600 shadow hover:text-yellow-700 focus:outline-none focus:ring active:text-yellow-500 sm:w-auto">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <x-project-intro />
+    </section>
 
     <section>
         <div
@@ -49,11 +83,12 @@
                         general construction and funding services that exceed our clients' expectations. We are
                         committed to delivering high-quality projects, fostering innovation, and maintaining the highest
                         standards of professionalism and integrity.
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
                         Through our expertise and dedication, we aim to
                         contribute to the development and growth of communities, while building long-lasting
-                        relationships with our clients and partners</p>
+                        relationships with our clients and partners
+                    </p>
                 </div>
             </div>
             <!-- End Icon Block -->
@@ -78,12 +113,14 @@
                         construction and funding entity, recognized for our excellence, innovation, and commitment to
                         sustainable development. We aspire to be the preferred choice for clients seeking reliable and
                         comprehensive construction services, combined with flexible and tailored funding solutions.
-                        <br/>
-                        <br/>
-                        By leveraging our expertise and embracing cutting-edge technologies, we strive to deliver projects
+                        <br />
+                        <br />
+                        By leveraging our expertise and embracing cutting-edge technologies, we strive to deliver
+                        projects
                         that not only meet the highest industry standards but also contribute to the betterment of
                         society and the environment. Our ultimate goal is to leave a lasting legacy of quality
-                        construction and funding solutions that positively impact the communities we serve.</p>
+                        construction and funding solutions that positively impact the communities we serve.
+                    </p>
                 </div>
                 <div
                     class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent sm:hidden md:block sm:bg-gradient-to-t sm:w-px sm:h-full dark:via-gray-800">
@@ -101,10 +138,8 @@
             <ul class="grid grid-cols-1 gap-4 md:grid-cols-3">
                 <li>
                     <a href="#" class="relative block group">
-                        <img src="{{ asset('images/safety.jpg') }}"
-
-                            alt=""
-                            class="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90" />
+                        <img src="{{ asset('images/safety.jpg') }}" alt=""
+                            class="object-cover w-full rounded-2xl transition duration-500 aspect-square group-hover:opacity-90" />
 
                         <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
                             {{-- <h3 class="text-xl font-medium text-white">Casual Trainers</h3> --}}
@@ -119,9 +154,8 @@
 
                 <li>
                     <a href="#" class="relative block group">
-                        <img src="{{ asset('images/construction.jpg') }}"
-                            alt=""
-                            class="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90" />
+                        <img src="{{ asset('images/construction.jpg') }}" alt=""
+                            class="object-cover w-full  rounded-2xl transition duration-500 aspect-square group-hover:opacity-90" />
 
                         <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
                             {{-- <h3 class="text-xl font-medium text-white">Winter Jumpers</h3> --}}
@@ -136,9 +170,8 @@
 
                 <li class="md:col-span-2 md:col-start-2 md:row-span-2 md:row-start-1">
                     <a href="#" class="relative block group">
-                        <img src="{{ asset('images/construction3.jpg') }}"
-                            alt=""
-                            class="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90" />
+                        <img src="{{ asset('images/construction3.jpg') }}" alt=""
+                            class="object-cover w-full  rounded-2xl transition duration-500 aspect-square group-hover:opacity-90" />
 
                         <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
                             {{-- <h3 class="text-xl font-medium text-white">Services</h3> --}}
@@ -154,31 +187,7 @@
         </div>
     </section>
 
-    <section class="py-6 dark:bg-gray-800 dark:text-gray-100">
-        <div class="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
-            <h1 class="text-4xl font-bold leadi text-center sm:text-5xl">Our team</h1>
-            <p class="max-w-2xl text-center dark:text-gray-400">{{ __('Our team of skilled professionals, including architects, engineers, project managers, and construction workers, bring a wealth of expertise and knowledge to every project we undertake.') }} </p>
-            <div class="flex flex-row flex-wrap-reverse justify-center">
-                <div class="flex flex-col justify-center m-8 text-center">
-                    <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="{{ asset('images/ceo2.jpg') }}">
-                    <p class="text-xl font-semibold leadi">Dr. Rafie L. Noushad</p>
-                    <p class="dark:text-gray-400">Chief Executive Officer</p>
-                </div>
-                <div class="flex flex-col justify-center m-8 text-center">
-                    <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="{{ asset('images/suglo.jpg') }}">
-                    <p class="text-xl font-semibold leadi">Emmanuel Y. Suglo</p>
-                    <p class="dark:text-gray-400">Operations Director</p>
-                </div>
-                <div class="flex flex-col justify-center m-8 text-center">
-                    <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="{{ asset('images/amadu.jpg') }}">
-                    <p class="text-xl font-semibold leadi">Hammah Amadu</p>
-                    <p class="dark:text-gray-400">Projects Manager</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    @livewire('call-to-action',['message' => 'Explore Our Projects', 'action' => 'Lets Get Started'])
+    @livewire('call-to-action', ['message' => 'Explore Our Projects', 'action' => 'Lets Get Started'])
 
 
 </x-front-layout>

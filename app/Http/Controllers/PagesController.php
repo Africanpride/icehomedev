@@ -18,6 +18,9 @@ class PagesController extends Controller
     public function products() {
         return view('products.index');
     }
+    public function projects() {
+        return view('projects.index');
+    }
     public function services() {
         return view('services.index');
     }
