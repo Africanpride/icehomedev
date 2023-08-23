@@ -127,8 +127,7 @@
                         </svg>
                         <div>
                             <h3 class="font-semibold text-gray-800 dark:text-gray-200">Office Location</h3>
-                            <p class="mt-1 text-sm text-gray-500">Gulf Aziz Bldg. Office No 307, Bole Sub –City Addis
-                                Ababa, Ethiopia</p>
+                            <p class="mt-1 text-sm text-gray-500">Gulf Aziz Bldg. Office No 307, Bole Sub –City Addis Ababa, Ethiopia</p>
                             <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                                 href="https://goo.gl/maps/ByZUgRsnre7R6e4H9">
                                 Find MAP

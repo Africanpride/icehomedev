@@ -109,9 +109,9 @@
 
             <ul class="grid grid-cols-1 gap-4 md:grid-cols-3">
                 <li>
-                    <a href="#" class="relative block group">
+                    <div href="#" class="relative block group">
                         <img src="{{ asset('images/services/service050.jpg') }}" alt="{{ __('IceHomeDev Railways Project') }}"
-                            class="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90" />
+                            class="object-cover w-full transition duration-500 aspect-square rounded-2xl" />
 
                         <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
                             {{-- <h3 class="text-xl font-medium text-white">Casual Trainers</h3> --}}
@@ -121,13 +121,13 @@
                                 {{ __('Railway Projects') }}
                             </span>
                         </div>
-                    </a>
+                    </div>
                 </li>
 
                 <li>
-                    <a href="#" class="relative block group">
+                    <div class="relative block group">
                         <img src="{{ asset('images/services/service007.jpg') }}" alt="{{ __('IceHomeDev Railways Project') }}"
-                            class="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90" />
+                            class="object-cover w-full transition duration-500 aspect-square rounded-2xl" />
 
                         <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
                             {{-- <h3 class="text-xl font-medium text-white">Winter Jumpers</h3> --}}
@@ -137,13 +137,13 @@
                                 Industrial Construction
                             </span>
                         </div>
-                    </a>
+                    </div>
                 </li>
 
                 <li class="md:col-span-2 md:col-start-2 md:row-span-2 md:row-start-1">
-                    <a href="#" class="relative block group">
+                    <div class="relative block group">
                         <img src="{{ asset('images/services/service002.jpg') }}" alt="{{ __('IceHomeDev Railways Project') }}"
-                            class="object-cover object-top  w-full transition duration-500 aspect-square group-hover:opacity-90" />
+                            class="object-cover object-top  w-full transition duration-500 aspect-square rounded-2xl" />
 
                         <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
                             {{-- <h3 class="text-xl font-medium text-white">Services</h3> --}}
@@ -153,7 +153,7 @@
                                 {{ __('Commercial Construction') }}
                             </span>
                         </div>
-                    </a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -169,8 +169,8 @@
                 <div class="flex flex-col justify-center m-8 text-center">
                     <img alt=""
                         class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500"
-                        src="{{ asset('images/ceo2.jpg') }}">
-                    <p class="text-xl font-semibold leadi">Dr. Rafie L. Noushad</p>
+                        src="{{ asset('images/ceo3.jpg') }}">
+                    <p class="text-xl font-semibold leadi">Dr. Rafie L. Noushad (PhD-Eng)</p>
                     <p class="dark:text-gray-400">Chief Executive Officer</p>
                 </div>
                 <div class="flex flex-col justify-center m-8 text-center">

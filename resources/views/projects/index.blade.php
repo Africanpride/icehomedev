@@ -1,18 +1,16 @@
 <x-front-layout>
 
-<section>
-    <x-page-intro
-    primaryColor="red"
-    secondaryColor="white"
-    firstImage="{{ asset('images/services/service038.jpg') }}"
-    secondImage="{{ asset('images/services/service036.jpg') }}"
-     >
-        <x-slot name="title"> {{ __('  Trusted excellence in complex construction Projects.') }}</x-slot>
-        <x-slot name="content"> {{ __('Over the years, we have built a strong reputation for delivering high-quality construction projects that meet and exceed client expectations. Our commitment to excellence and attention to detail have earned us the trust and loyalty of our clients, who rely on us for their most complex and demanding construction needs.') }}</x-slot>
+    <section>
+        <x-page-intro primaryColor="red" secondaryColor="white"
+            firstImage="{{ asset('images/services/service038.jpg') }}"
+            secondImage="{{ asset('images/services/service036.jpg') }}">
+            <x-slot name="title"> {{ __('  Trusted excellence in complex construction Projects.') }}</x-slot>
+            <x-slot name="content">
+                {{ __('Over the years, we have built a strong reputation for delivering high-quality construction projects that meet and exceed client expectations. Our commitment to excellence and attention to detail have earned us the trust and loyalty of our clients, who rely on us for their most complex and demanding construction needs.') }}</x-slot>
 
-    </x-page-intro>
+        </x-page-intro>
 
-</section>
+    </section>
 
     <section
         class="relative bg-[url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)] bg-cover bg-center bg-no-repeat hidden">
@@ -37,15 +35,15 @@
                 </p>
 
                 <div class="mt-8 flex flex-wrap gap-4 text-center">
-                    <a href="#"
+                    <div
                         class="block w-full rounded bg-yellow-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-yellow-700 focus:outline-none focus:ring active:bg-yellow-500 sm:w-auto">
                         Get Started
-                    </a>
+                    </div>
 
-                    <a href="#"
+                    <div
                         class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-yellow-600 shadow hover:text-yellow-700 focus:outline-none focus:ring active:text-yellow-500 sm:w-auto">
                         Learn More
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -56,90 +54,208 @@
     </section>
 
     <section>
-        <div
-            class="max-w-[85rem] grid sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 py-10 md:py-20 px-4 sm:px-6 md:px-8 mx-auto">
-            <!-- Icon Block -->
-            <div class="relative flex sm:pr-6">
-                <svg class="shrink-0 w-10 h-10 mt-1" width="46" height="46" viewBox="0 0 46 46" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M20.7692 13L21.6232 9.62218C21.7598 9.08182 22.3118 8.75743 22.8503 8.90104L35.9299 12.3889C36.4538 12.5286 36.7709 13.0604 36.6448 13.5877L31.6111 34.6379C31.4799 35.1865 30.9213 35.5181 30.377 35.3706L30.2319 35.3312"
-                        stroke="#2563EB" stroke-width="2" stroke-linecap="round"></path>
-                    <path
-                        d="M26.8715 14.64H11.8715C11.3192 14.64 10.8715 15.0877 10.8715 15.64V32.6117C10.8715 33.0112 11.1092 33.3723 11.4761 33.5303L20.835 37.5585C20.9598 37.6123 21.0944 37.64 21.2303 37.64H26.8715C27.4237 37.64 27.8715 37.1923 27.8715 36.64V15.64C27.8715 15.0877 27.4237 14.64 26.8715 14.64Z"
-                        fill="#C084FC"></path>
-                    <path
-                        d="M20.2703 37.3917L11.9684 33.9626C11.6805 33.8437 11.7421 33.4192 12.0519 33.387L18.4396 32.7235C18.9086 32.6748 19.3478 32.9603 19.4938 33.4086L20.6701 37.0216C20.7494 37.265 20.5069 37.4894 20.2703 37.3917Z"
-                        fill="#DDD6FE"></path>
-                    <path d="M15.0923 19.5H20.0923" stroke="white" stroke-width="2" stroke-linecap="round"></path>
-                    <path d="M15.0923 23.5H23.5923" stroke="white" stroke-width="2" stroke-linecap="round"></path>
-                    <path d="M15.0923 27.5H23.5923" stroke="white" stroke-width="2" stroke-linecap="round"></path>
-                    <rect x="1.5" y="1" width="43" height="44" rx="11" stroke="#2563EB"
-                        stroke-width="2"></rect>
-                </svg>
-                <div class="ml-6">
-                    <h2 class="font-semibold mb-1 dark:text-white">The IceHome Mission</h2>
-                    <p class="text-gray-600 leading-normal dark:text-gray-400">Our mission is to provide exceptional
-                        general construction and funding services that exceed our clients' expectations. We are
-                        committed to delivering high-quality projects, fostering innovation, and maintaining the highest
-                        standards of professionalism and integrity.
-                        <br />
-                        <br />
-                        Through our expertise and dedication, we aim to
-                        contribute to the development and growth of communities, while building long-lasting
-                        relationships with our clients and partners
-                    </p>
+        <!-- Features -->
+        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <!-- Tab Nav -->
+            <nav class="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4" aria-label="Tabs"
+                role="tablist">
+                <button type="button"
+                    class="hs-tab-active:bg-gray-100 hs-tab-active:hover:border-transparent text-center md:text-left hover:bg-gray-100 p-3 md:p-5 rounded-xl dark:hs-tab-active:bg-white/[.05] dark:hover:bg-gray-700 active"
+                    id="tabs-with-card-item-1" data-hs-tab="#tabs-with-card-1" aria-controls="tabs-with-card-1"
+                    role="tab">
+                    <span class="md:flex">
+                        <svg class="hidden md:block flex-shrink-0 md:mt-2 h-6 w-6 hs-tab-active:text-blue-600 text-gray-500 dark:hs-tab-active:text-blue-500 dark:text-gray-500"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z" />
+                            <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                        </svg>
+                        <span class="md:grow md:ml-5">
+                            <span
+                                class="hs-tab-active:text-blue-600 block font-semibold text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200">All-in-one
+                                workspace</span>
+                            <span class="hidden lg:block mt-2 text-gray-800 dark:text-gray-200">Create a business,
+                                whether you’ve got a fresh idea.</span>
+                        </span>
+                    </span>
+                </button>
+
+                <button type="button"
+                    class="hs-tab-active:bg-gray-100 hs-tab-active:hover:border-transparent text-center md:text-left hover:bg-gray-100 p-3 md:p-5 rounded-xl dark:hs-tab-active:bg-white/[.05] dark:hover:bg-gray-700"
+                    id="tabs-with-card-item-2" data-hs-tab="#tabs-with-card-2" aria-controls="tabs-with-card-2"
+                    role="tab">
+                    <span class="md:flex">
+                        <svg class="hidden md:block flex-shrink-0 md:mt-2 h-6 w-6 hs-tab-active:text-blue-600 text-gray-500 dark:hs-tab-active:text-blue-500 dark:text-gray-500"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z" />
+                        </svg>
+                        <span class="md:grow md:ml-5">
+                            <span
+                                class="hs-tab-active:text-blue-600 block font-semibold text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200">Automation
+                                on a whole new level</span>
+                            <span class="hidden lg:block mt-2 text-gray-800 dark:text-gray-200">Use automation to scale
+                                campaigns profitably and save time doing it.</span>
+                        </span>
+                    </span>
+                </button>
+
+                <button type="button"
+                    class="hs-tab-active:bg-gray-100 hs-tab-active:hover:border-transparent text-center md:text-left hover:bg-gray-100 p-3 md:p-5 rounded-xl dark:hs-tab-active:bg-white/[.05] dark:hover:bg-gray-700"
+                    id="tabs-with-card-item-3" data-hs-tab="#tabs-with-card-3" aria-controls="tabs-with-card-3"
+                    role="tab">
+                    <span class="md:flex">
+                        <svg class="hidden md:block flex-shrink-0 md:mt-2 h-6 w-6 hs-tab-active:text-blue-600 text-gray-500 dark:hs-tab-active:text-blue-500 dark:text-gray-500"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z" />
+                        </svg>
+                        <span class="md:grow md:ml-5">
+                            <span
+                                class="hs-tab-active:text-blue-600 block font-semibold text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200">Solving
+                                problems for every team</span>
+                            <span class="hidden lg:block mt-2 text-gray-800 dark:text-gray-200">One tool for your
+                                company to share knowledge and ship projects.</span>
+                        </span>
+                    </span>
+                </button>
+            </nav>
+            <!-- End Tab Nav -->
+
+            <!-- Tab Content -->
+            <div class="mt-12 md:mt-16">
+                <div id="tabs-with-card-1" role="tabpanel" aria-labelledby="tabs-with-card-item-1">
+                    <!-- Devices -->
+                    <div class="max-w-[1140px] lg:pb-32 relative">
+                        <!-- Mobile Device -->
+                        <figure
+                            class="hidden absolute bottom-0 left-0 z-[2] max-w-full w-60 h-auto mb-20 ml-20 lg:block">
+                            <div
+                                class="p-1.5 bg-gray-100 rounded-3xl shadow-[0_2.75rem_5.5rem_-3.5rem_rgb(45_55_75_/_20%),_0_2rem_4rem_-2rem_rgb(45_55_75_/_30%),_inset_0_-0.1875rem_0.3125rem_0_rgb(45_55_75_/_20%)] dark:bg-gray-700 dark:shadow-[0_2.75rem_5.5rem_-3.5rem_rgb(0_0_0_/_20%),_0_2rem_4rem_-2rem_rgb(0_0_0_/_30%),_inset_0_-0.1875rem_0.3125rem_0_rgb(0_0_0_/_20%)]">
+                                <img class="max-w-full h-auto rounded-[1.25rem]" src="../assets/img/mockups/img9.jpg"
+                                    alt="Image Description">
+                            </div>
+                        </figure>
+                        <!-- End Mobile Device -->
+
+                        <!-- Browser Device -->
+                        <figure
+                            class="ml-auto mr-20 relative z-[1] max-w-full w-[50rem] h-auto rounded-b-lg shadow-[0_2.75rem_3.5rem_-2rem_rgb(45_55_75_/_20%),_0_0_5rem_-2rem_rgb(45_55_75_/_15%)] dark:shadow-[0_2.75rem_3.5rem_-2rem_rgb(0_0_0_/_20%),_0_0_5rem_-2rem_rgb(0_0_0_/_15%)]">
+                            <div
+                                class="relative flex items-center max-w-[50rem] bg-white border-b border-gray-100 rounded-t-lg py-2 px-24 dark:bg-gray-800 dark:border-gray-700">
+                                <div class="flex space-x-1 absolute top-2/4 left-4 -translate-y-1">
+                                    <span class="w-2 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></span>
+                                    <span class="w-2 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></span>
+                                    <span class="w-2 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></span>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center w-full h-full bg-gray-200 text-[.25rem] text-gray-800 rounded-sm sm:text-[.5rem] dark:bg-gray-700 dark:text-gray-200">
+                                    www.preline.co</div>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-b-lg">
+                                <img class="max-w-full h-auto rounded-b-lg" src="../assets/img/mockups/img8.jpg"
+                                    alt="Image Description">
+                            </div>
+                        </figure>
+                        <!-- End Browser Device -->
+                    </div>
+                    <!-- End Devices -->
+                </div>
+
+                <div id="tabs-with-card-2" class="hidden" role="tabpanel" aria-labelledby="tabs-with-card-item-2">
+                    <!-- Devices -->
+                    <div class="max-w-[1140px] lg:pb-32 relative">
+                        <!-- Mobile Device -->
+                        <figure
+                            class="hidden absolute bottom-0 left-0 z-[2] max-w-full w-60 h-auto mb-20 ml-20 lg:block">
+                            <div
+                                class="p-1.5 bg-gray-700 rounded-3xl shadow-[0_2.75rem_5.5rem_-3.5rem_rgb(0_0_0_/_20%),_0_2rem_4rem_-2rem_rgb(0_0_0_/_30%),_inset_0_-0.1875rem_0.3125rem_0_rgb(0_0_0_/_20%)]">
+                                <img class="max-w-full h-auto rounded-[1.25rem]" src="../assets/img/mockups/img11.jpg"
+                                    alt="Image Description">
+                            </div>
+                        </figure>
+                        <!-- End Mobile Device -->
+
+                        <!-- Browser Device -->
+                        <figure
+                            class="ml-auto mr-20 relative z-[1] max-w-full w-[50rem] h-auto rounded-b-lg shadow-shadow-[0_2.75rem_3.5rem_-2rem_rgb(0_0_0_/_20%),_0_0_5rem_-2rem_rgb(0_0_0_/_15%)]">
+                            <div
+                                class="relative flex items-center max-w-[50rem] bg-gray-800 border-b border-gray-700 rounded-t-lg py-2 px-24">
+                                <div class="flex space-x-1 absolute top-2/4 left-4 -translate-y-1">
+                                    <span class="w-2 h-2 bg-gray-700 rounded-full"></span>
+                                    <span class="w-2 h-2 bg-gray-700 rounded-full"></span>
+                                    <span class="w-2 h-2 bg-gray-700 rounded-full"></span>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center w-full h-full bg-gray-700 text-[.25rem] text-gray-200 rounded-sm sm:text-[.5rem]">
+                                    www.preline.co</div>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-b-lg">
+                                <img class="max-w-full h-auto rounded-b-lg" src="../assets/img/mockups/img10.jpg"
+                                    alt="Image Description">
+                            </div>
+                        </figure>
+                        <!-- End Browser Device -->
+                    </div>
+                    <!-- End Devices -->
+                </div>
+
+                <div id="tabs-with-card-3" class="hidden" role="tabpanel" aria-labelledby="tabs-with-card-item-3">
+                    <!-- Devices -->
+                    <div class="max-w-[1140px] lg:pb-32 relative">
+                        <!-- Mobile Device -->
+                        <figure
+                            class="hidden absolute bottom-0 left-0 z-[2] max-w-full w-60 h-auto mb-20 ml-20 lg:block">
+                            <div
+                                class="p-1.5 bg-gray-100 rounded-3xl shadow-[0_2.75rem_5.5rem_-3.5rem_rgb(45_55_75_/_20%),_0_2rem_4rem_-2rem_rgb(45_55_75_/_30%),_inset_0_-0.1875rem_0.3125rem_0_rgb(45_55_75_/_20%)] dark:bg-gray-700 dark:shadow-[0_2.75rem_5.5rem_-3.5rem_rgb(0_0_0_/_20%),_0_2rem_4rem_-2rem_rgb(0_0_0_/_30%),_inset_0_-0.1875rem_0.3125rem_0_rgb(0_0_0_/_20%)]">
+                                <img class="max-w-full h-auto rounded-[1.25rem]" src="../assets/img/mockups/img13.jpg"
+                                    alt="Image Description">
+                            </div>
+                        </figure>
+                        <!-- End Mobile Device -->
+
+                        <!-- Browser Device -->
+                        <figure
+                            class="ml-auto mr-20 relative z-[1] max-w-full w-[50rem] h-auto rounded-b-lg shadow-[0_2.75rem_3.5rem_-2rem_rgb(45_55_75_/_20%),_0_0_5rem_-2rem_rgb(45_55_75_/_15%)] dark:shadow-[0_2.75rem_3.5rem_-2rem_rgb(0_0_0_/_20%),_0_0_5rem_-2rem_rgb(0_0_0_/_15%)]">
+                            <div
+                                class="relative flex items-center max-w-[50rem] bg-white border-b border-gray-100 rounded-t-lg py-2 px-24 dark:bg-gray-800 dark:border-gray-700">
+                                <div class="flex space-x-1 absolute top-2/4 left-4 -translate-y-1">
+                                    <span class="w-2 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></span>
+                                    <span class="w-2 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></span>
+                                    <span class="w-2 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></span>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center w-full h-full bg-gray-200 text-[.25rem] text-gray-800 rounded-sm sm:text-[.5rem] dark:bg-gray-700 dark:text-gray-200">
+                                    www.preline.co</div>
+                            </div>
+
+                            <div class="bg-gray-800 rounded-b-lg">
+                                <img class="max-w-full h-auto rounded-b-lg" src="../assets/img/mockups/img12.jpg"
+                                    alt="Image Description">
+                            </div>
+                        </figure>
+                        <!-- End Browser Device -->
+                    </div>
+                    <!-- End Devices -->
                 </div>
             </div>
-            <!-- End Icon Block -->
-
-
-            <!-- Icon Block -->
-            <div class="relative flex pt-6 sm:pt-0 md:pl-6">
-                <svg class="shrink-0 w-10 h-10 mt-1" width="46" height="46" viewBox="0 0 46 46" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M26.3593 14.8949C26.3838 14.8276 26.4311 14.769 26.4944 14.7274C26.5578 14.6858 26.6339 14.6635 26.712 14.6635C26.7901 14.6635 26.8662 14.6858 26.9295 14.7274C26.9928 14.769 27.0401 14.8276 27.0647 14.8949L27.7273 16.7026C28.0235 17.5085 28.7186 18.1401 29.6054 18.4092L31.5949 19.0113C31.6691 19.0336 31.7336 19.0766 31.7793 19.1341C31.825 19.1916 31.8497 19.2608 31.8497 19.3317C31.8497 19.4027 31.825 19.4719 31.7793 19.5294C31.7336 19.5869 31.6691 19.6299 31.5949 19.6522L29.6054 20.2543C29.168 20.3867 28.7706 20.6098 28.4446 20.906C28.1186 21.2023 27.873 21.5634 27.7273 21.9608L27.0647 23.7685C27.0401 23.8359 26.9928 23.8945 26.9295 23.9361C26.8662 23.9776 26.7901 24 26.712 24C26.6339 24 26.5578 23.9776 26.4944 23.9361C26.4311 23.8945 26.3838 23.8359 26.3593 23.7685L25.6967 21.9608C25.551 21.5634 25.3054 21.2023 24.9794 20.906C24.6534 20.6098 24.2559 20.3867 23.8185 20.2543L21.829 19.6522C21.7549 19.6299 21.6904 19.5869 21.6447 19.5294C21.5989 19.4719 21.5743 19.4027 21.5743 19.3317C21.5743 19.2608 21.5989 19.1916 21.6447 19.1341C21.6904 19.0766 21.7549 19.0336 21.829 19.0113L23.8185 18.4092C24.2559 18.2768 24.6534 18.0537 24.9794 17.7574C25.3054 17.4612 25.551 17.1001 25.6967 16.7026L26.3593 14.8949V14.8949ZM31.6138 10.1517C31.6307 10.1074 31.6623 10.069 31.7044 10.0418C31.7464 10.0146 31.7967 10 31.8483 10C31.8999 10 31.9502 10.0146 31.9923 10.0418C32.0343 10.069 32.066 10.1074 32.0829 10.1517L32.5246 11.3558C32.7215 11.894 33.1855 12.3156 33.7779 12.4945L35.103 12.8959C35.1518 12.9113 35.1941 12.94 35.224 12.9782C35.2539 13.0164 35.27 13.0621 35.27 13.109C35.27 13.1559 35.2539 13.2016 35.224 13.2398C35.1941 13.278 35.1518 13.3068 35.103 13.3222L33.7779 13.7235C33.4859 13.8118 33.2206 13.9606 33.0031 14.1583C32.7855 14.356 32.6217 14.597 32.5246 14.8623L32.0829 16.0664C32.066 16.1107 32.0343 16.1491 31.9923 16.1763C31.9502 16.2034 31.8999 16.2181 31.8483 16.2181C31.7967 16.2181 31.7464 16.2034 31.7044 16.1763C31.6623 16.1491 31.6307 16.1107 31.6138 16.0664L31.172 14.8623C31.0749 14.597 30.9111 14.356 30.6935 14.1583C30.476 13.9606 30.2107 13.8118 29.9188 13.7235L28.5936 13.3222C28.5448 13.3068 28.5026 13.278 28.4727 13.2398C28.4427 13.2016 28.4267 13.1559 28.4267 13.109C28.4267 13.0621 28.4427 13.0164 28.4727 12.9782C28.5026 12.94 28.5448 12.9113 28.5936 12.8959L29.9188 12.4945C30.5112 12.3156 30.9751 11.894 31.172 11.3558L31.6138 10.1532V10.1517Z"
-                        fill="#2563EB"></path>
-                    <path
-                        d="M16.2121 19.6897C13.8849 28.8812 20.5354 32.6479 25.4141 32.6534C25.9088 32.654 26.2133 33.3005 25.8326 33.6165C14.4769 43.0419 2.69149 27.0986 15.4777 19.1211C15.8588 18.8834 16.3224 19.2543 16.2121 19.6897Z"
-                        fill="#C084FC"></path>
-                    <rect x="1.83331" y="1" width="43" height="44" rx="11" stroke="#2563EB"
-                        stroke-width="2"></rect>
-                </svg>
-                <div class="ml-6">
-                    <h2 class="font-semibold mb-1 dark:text-white">Vision and Future Goals</h2>
-                    <p class="text-gray-600 leading-normal dark:text-gray-400">Our vision is to be a leading general
-                        construction and funding entity, recognized for our excellence, innovation, and commitment to
-                        sustainable development. We aspire to be the preferred choice for clients seeking reliable and
-                        comprehensive construction services, combined with flexible and tailored funding solutions.
-                        <br />
-                        <br />
-                        By leveraging our expertise and embracing cutting-edge technologies, we strive to deliver
-                        projects
-                        that not only meet the highest industry standards but also contribute to the betterment of
-                        society and the environment. Our ultimate goal is to leave a lasting legacy of quality
-                        construction and funding solutions that positively impact the communities we serve.
-                    </p>
-                </div>
-                <div
-                    class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent sm:hidden md:block sm:bg-gradient-to-t sm:w-px sm:h-full dark:via-gray-800">
-                </div>
-            </div>
-            <!-- End Icon Block -->
+            <!-- End Tab Content -->
         </div>
-
+        <!-- End Features -->
     </section>
-
-
     <section>
         <div class="max-w-screen-xl px-4 py-3 mx-auto sm:px-6 sm:py-6 md:px-8">
 
             <ul class="grid grid-cols-1 gap-4 md:grid-cols-3">
                 <li>
-                    <a href="#" class="relative block group">
+                    <div class="relative block group">
                         <img src="{{ asset('images/safety.jpg') }}" alt=""
-                            class="object-cover w-full rounded-2xl transition duration-500 aspect-square group-hover:opacity-90" />
+                            class="object-cover w-full rounded-2xl transition duration-500 aspect-square" />
 
                         <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
                             {{-- <h3 class="text-xl font-medium text-white">Casual Trainers</h3> --}}
@@ -149,13 +265,13 @@
                                 Financial Services
                             </span>
                         </div>
-                    </a>
+                    </div>
                 </li>
 
                 <li>
-                    <a href="#" class="relative block group">
+                    <div class="relative block group">
                         <img src="{{ asset('images/construction.jpg') }}" alt=""
-                            class="object-cover w-full  rounded-2xl transition duration-500 aspect-square group-hover:opacity-90" />
+                            class="object-cover w-full  rounded-2xl transition duration-500 aspect-square" />
 
                         <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
                             {{-- <h3 class="text-xl font-medium text-white">Winter Jumpers</h3> --}}
@@ -165,13 +281,13 @@
                                 Industrial Construction
                             </span>
                         </div>
-                    </a>
+                    </div>
                 </li>
 
                 <li class="md:col-span-2 md:col-start-2 md:row-span-2 md:row-start-1">
-                    <a href="#" class="relative block group">
+                    <div class="relative block group">
                         <img src="{{ asset('images/construction3.jpg') }}" alt=""
-                            class="object-cover w-full  rounded-2xl transition duration-500 aspect-square group-hover:opacity-90" />
+                            class="object-cover w-full  rounded-2xl transition duration-500 aspect-square" />
 
                         <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
                             {{-- <h3 class="text-xl font-medium text-white">Services</h3> --}}
@@ -181,7 +297,7 @@
                                 Residential Construction
                             </span>
                         </div>
-                    </a>
+                    </div>
                 </li>
             </ul>
         </div>

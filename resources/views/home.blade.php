@@ -1,6 +1,62 @@
 <x-front-layout>
 
+    <section>
 
+        <div class="container ">
+
+
+            <!-- Features -->
+            <div class="max-w-5xl px-4 py-2 sm:px-6 lg:px-8 lg:py-16 mx-auto">
+                <div class="aspect-16/9">
+                    <img class="w-full object-cover  rounded-2xl" src="{{ asset('images/services/service018.jpg') }}"
+                        alt="Image Description">
+                </div>
+            </div>
+            <!-- End Features -->
+            <div class="text-gray-600  max-w-8xl  ">
+
+                <div class=" flex flex-wrap px-3 pb-5 mx-auto items-center">
+                    <div
+                        class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-600/30">
+                        <h1 class="sm:text-4xl text-3xl font-bold title-font mb-3 dark:text-white " >Legacy: 47 Years And
+                            Excelling</h1>
+                        <p class="leading-relaxed text-lg">
+                            {{ __('For 47 years, Ice Home Development and Construction has expertly executed projects under many categories. Our legacy is firmly built on four decades of unparalleled construction prowess and innovation.') }}
+                        </p>
+                        <a href="{{ route('projects') }}" class="text-yellow-500 inline-flex items-center mt-4  text-lg">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="flex flex-col md:w-1/2 md:pl-12 py-12">
+                        {{-- <h2 class="text-lg font-semibold dark:text-white tracking-wider mb-3 uppercase">Project
+                            Categories</h2> --}}
+                        <nav class="flex flex-wrap list-none  ">
+                            @foreach ($projectFields as $field)
+                                <li class="md:w-1/3 w-1/2 whitespace-nowrap	flex justify-start items-center py-1 gap-2 text-black ">
+                                    <x-lucide-check-circle-2 class="text-yellow-500 h-4 w-4" />
+                                    <a href="{{  route('projects') }}" class="text-gray-500  hover:text-yellow-500 text-sm capitalize leading-snug whitespace-nowrap font-bold ">{{ $field }}</a>
+                                </li>
+                            @endforeach
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="max-w-5xl px-4 py-2 sm:px-6 lg:px-8 lg:py-16 mx-auto">
+                <div class="aspect-16/9">
+                    <img class="w-full object-cover  rounded-2xl" src="{{ asset('images/group.jpg') }}"
+                        alt="Image Description">
+                </div>
+            </div>
+            <!-- End Features -->
+
+        </div>
+    </section>
     <section>
         <div class="relative">
             <img src="{{ asset('images/construction.jpg') }}?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
@@ -64,35 +120,11 @@
 
     </section>
 
-    <section class=" dark:bg-gray-800 dark:text-gray-100">
-        <div class="container flex flex-col items-center p-4 mx-auto space-y-6 md:p-24">
-            <img src="{{ asset('images/helmet.svg') }}" class="w-32 h-32  " alt="">
 
-            <p
-                class="px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-4xl lg:max-w-2xl
-                 xl:max-w-4xl dark:text-gray-300 text-['inter']">
-                {{ __('"ICE Home Development & Construction delivers exceptional construction, prioritizing quality, innovation, professionalism; fostering growth, forging enduring client partnerships."') }}
-            </p>
-            <div class=" justify-center space-x-3 flex">
-                <img src="{{ asset('images/ceo2.jpg') }}" alt=""
-                    class="w-20 h-20 bg-center bg-cover rounded-full dark:bg-gray-700">
-                <div>
-                    <p class="lead font-bold">Dr. Rafie L. Noushad</p>
-                    <p class="text-sm leadi dark:text-gray-300 italic">CEO, IceHomeDev</p>
-                    <a class="flex items-center py-2 space-x-1 text-sm dark:text-violet-400"
-                        href="{{ route('about') }}">
-                        <span>Read More</span>
-                        <x-lucide-arrow-right class="text-current w-5 h-5" />
-                    </a>
-                </div>
-            </div>
-            {{-- </div> --}}
-    </section>
-
-    <section>
-        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <section class="bg-gray-200">
+        <div class="max-w-7xl md:px-8 md:py-32 py-16 mx-auto px-4 sm:px-6 ">
             <!-- Grid -->
-            <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-10">
+            <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-5">
                 <!-- Card -->
                 <a class="group rounded-xl overflow-hidden" href="#">
                     <div class="sm:flex place-items-center">
@@ -160,9 +192,37 @@
             </div>
             <!-- End Grid -->
         </div>
-
-
     </section>
+
+    <section class=" dark:bg-gray-800 dark:text-gray-100">
+        <div class="container flex flex-col items-center p-4 mx-auto space-y-6 md:p-16">
+            <img src="{{ asset('images/helmet.svg') }}" class="w-24 h-24  " alt="">
+
+            <p
+                class="px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-4xl lg:max-w-2xl
+                 xl:max-w-4xl dark:text-gray-300 text-['inter']">
+                {{ __('"ICE Home Development & Construction delivers exceptional construction, prioritizing quality, innovation, professionalism; fostering growth, forging enduring client partnerships."') }}
+            </p>
+            <div class=" justify-center space-x-3 flex">
+                <img src="{{ asset('images/ceo3.jpg') }}" alt=""
+                    class="w-20 h-20 bg-center bg-cover rounded-full dark:bg-gray-700">
+                <div>
+                    <p class="lead font-bold">Dr. Rafie L. Noushad (PhD-Eng) </p>
+                    <p class="text-sm leadi dark:text-gray-300 italic">CEO, IceHomeDev</p>
+                    <a class="flex items-center py-2 space-x-1 text-sm dark:text-violet-400"
+                        href="{{ route('about') }}">
+                        <span>Read More</span>
+                        <x-lucide-arrow-right class="text-current w-5 h-5" />
+                    </a>
+                </div>
+            </div>
+            {{-- </div> --}}
+    </section>
+
+
+
+
+
     <section class="dark:bg-gray-800 dark:text-gray-100 hidden">
         <div class=" flex flex-col-reverse mx-auto lg:flex-row">
             <div
