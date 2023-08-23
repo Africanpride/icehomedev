@@ -7,17 +7,23 @@
 
 <div>
     <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
-        <header>
+<div class="space-y-6">
+<div class="rounded-full w-24 h-24 bg-[#F59E0B]/10 grid place-items-center ">
+    <img src="{{ asset('images/builder.svg') }}" class="w-16 h-16 p-2 " alt="">
+</div>
 
-            <h2 class="text-xl font-extrabold text-gray-900 sm:text-3xl uppercase">
-                {{ $title ?? 'Explore Our Project Portfolio' }}
-            </h2>
+    <div>
+
+        <h2 class="text-xl font-extrabold text-gray-900 sm:text-3xl uppercase">
+            {{ $title ?? 'Explore Our Project Portfolio' }}
+        </h2>
 
 
-            <p class="max-w-4xl my-4 text-gray-500 text-xl">
-                {{ $introduction ?? 'Explore our comprehensive project portfolio ranging from Railways Construction, Residential, Commercial, and Industrial Construction to Infrastructure Development, Renovation, and Remodeling – we excel in crafting quality spaces. In addition, our Financial Services encompass Project Financing, Equity Investment, Debt Financing, and Funding Solutions for Construction Projects.' }}
-            </p>
-        </header>
+        <p class="max-w-4xl my-4 text-gray-500 text-xl">
+            {{ $introduction ?? 'Explore our comprehensive project portfolio ranging from Railways Construction, Residential, Commercial, and Industrial Construction to Infrastructure Development, Renovation, and Remodeling – we excel in crafting quality spaces. In addition, our Financial Services encompass Project Financing, Equity Investment, Debt Financing, and Funding Solutions for Construction Projects.' }}
+        </p>
+    </div>
+</div>
 
         <ul class="grid gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-4">
             <li>

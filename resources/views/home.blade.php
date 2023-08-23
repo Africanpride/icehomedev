@@ -4,11 +4,14 @@
 
         <div class="container ">
 
-
+            {{-- <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+                <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full absolute top-0 left-0 object-cover rounded-xl"
+                    src="{{ asset('images/services/service011.jpg') }}" alt="Image Description">
+            </div> --}}
             <!-- Features -->
             <div class="max-w-5xl px-4 py-2 sm:px-6 lg:px-8 lg:py-16 mx-auto">
                 <div class="aspect-16/9">
-                    <img class="w-full object-cover  rounded-2xl" src="{{ asset('images/services/service018.jpg') }}"
+                    <img class="w-full object-cover hover:scale-105 transition-transform  delay-700 duration-1000 ease-in-out  rounded-2xl" src="{{ asset('images/services/service018.jpg') }}"
                         alt="Image Description">
                 </div>
             </div>
@@ -49,7 +52,7 @@
             <!-- Features -->
             <div class="max-w-5xl px-4 py-2 sm:px-6 lg:px-8 lg:py-16 mx-auto">
                 <div class="aspect-16/9">
-                    <img class="w-full object-cover  rounded-2xl" src="{{ asset('images/group.jpg') }}"
+                    <img class="w-full object-cover hover:scale-105 transition-transform  delay-700 duration-1000 ease-in-out  rounded-2xl" src="{{ asset('images/group.jpg') }}"
                         alt="Image Description">
                 </div>
             </div>
@@ -121,7 +124,7 @@
     </section>
 
 
-    <section class="bg-gray-200">
+    <section class="bg-gray-200 dark:bg-transparent">
         <div class="max-w-7xl md:px-8 md:py-32 py-16 mx-auto px-4 sm:px-6 ">
             <!-- Grid -->
             <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-5">

@@ -53,7 +53,7 @@
         <x-project-intro />
     </section>
 
-    <section>
+    <section class="hidden">
         <!-- Features -->
         <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
             <!-- Tab Nav -->
@@ -254,7 +254,7 @@
             <ul class="grid grid-cols-1 gap-4 md:grid-cols-3">
                 <li>
                     <div class="relative block group">
-                        <img src="{{ asset('images/safety.jpg') }}" alt=""
+                        <img src="{{ asset('images/services/service033.jpg') }}" alt=""
                             class="object-cover w-full rounded-2xl transition duration-500 aspect-square" />
 
                         <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
@@ -262,7 +262,7 @@
 
                             <span
                                 class="mt-1.5 inline-block bg-yellow-600 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
-                                Financial Services
+                               Bridge Construction
                             </span>
                         </div>
                     </div>
