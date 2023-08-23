@@ -20,7 +20,6 @@ Route::get('test', function() {
 Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('maintenance', [PagesController::class, 'maintenance'])->name('maintenance');
 Route::get('about', [PagesController::class, 'about'])->name('about');
-Route::get('products', [PagesController::class, 'products'])->name('products');
 Route::get('projects', [PagesController::class, 'projects'])->name('projects');
 Route::get('services', [PagesController::class, 'services'])->name('services');
 Route::get('contact', [PagesController::class, 'contact'])->name('contact');

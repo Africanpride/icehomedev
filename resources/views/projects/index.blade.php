@@ -1,9 +1,11 @@
 <x-front-layout>
 
     <section>
-        <x-page-intro primaryColor="red" secondaryColor="white"
+        <x-page-intro primaryColor="red" secondaryColor="text-red-100"
             firstImage="{{ asset('images/services/service038.jpg') }}"
-            secondImage="{{ asset('images/services/service036.jpg') }}">
+            secondImage="{{ asset('images/services/service036.jpg') }}"
+            svgImage="{{ asset('images/engineer-workers-icon.svg') }}"
+            >
             <x-slot name="title"> {{ __('  Trusted excellence in complex construction Projects.') }}</x-slot>
             <x-slot name="content">
                 {{ __('Over the years, we have built a strong reputation for delivering high-quality construction projects that meet and exceed client expectations. Our commitment to excellence and attention to detail have earned us the trust and loyalty of our clients, who rely on us for their most complex and demanding construction needs.') }}</x-slot>

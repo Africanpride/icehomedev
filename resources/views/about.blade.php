@@ -1,15 +1,18 @@
 <x-front-layout>
 
     <section>
-        <x-page-intro primaryColor="blue" secondaryColor="text-gray-900" firstImage="{{ asset('images/meeting.jpg') }}"
+        <x-page-intro primaryColor="blue" secondaryColor="text-blue-100" firstImage="{{ asset('images/meeting.jpg') }}"
             secondImage="{{ asset('images/services/service036.jpg') }}">
             <x-slot name="title">
-                {{ __('Ice Homes Development & Construction: Pioneering Excellence in Diverse Construction') }}</x-slot>
+                {{ __('Ice Homes Development & Construction: Excellence in Diverse Construction') }}
+            </x-slot>
             <x-slot name="content">
                 {{ __('By leveraging our expertise and embracing cutting-edge technologies, we strive to deliver
                 projects
                 that not only meet the highest industry standards but also contribute to the betterment of
-                society and the environment. ') }}</x-slot>
+                society and the environment. ') }}
+
+                </x-slot>
 
         </x-page-intro>
 
@@ -94,9 +97,9 @@
 
                     </p>
                 </div>
-                <div
+                {{-- <div
                     class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent sm:hidden md:block sm:bg-gradient-to-t sm:w-px sm:h-full dark:via-gray-800">
-                </div>
+                </div> --}}
             </div>
             <!-- End Icon Block -->
         </div>
