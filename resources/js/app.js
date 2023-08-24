@@ -1,5 +1,6 @@
 import './bootstrap';
 import('preline');
+import './swiper'
 
 // import Alpine from 'alpinejs';
 // import focus from '@alpinejs/focus';
