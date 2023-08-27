@@ -39,7 +39,7 @@
                 <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                         href="#">Customers</a></p>
                 <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                        href="#">Sitemap</a></p>
+                        href="sitemap.xml">Sitemap</a></p>
             </div>
         </div>
         <!-- End Col -->
@@ -51,7 +51,7 @@
                 <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                         href="#">Community</a></p>
                 <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                        href="#">Help & Support</a></p>
+                        href="{{ route('contact') }}">Help & Support</a></p>
                 <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                         href="#">Publications</a></p>
                 <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"

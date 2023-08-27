@@ -81,7 +81,7 @@
           <a class="flex items-center gap-x-2 font-extrabold text-base text-gray-500 hover:text-yellow-600 sm:border-l
            sm:border-gray-300/50 sm:my-6 sm:pl-3 dark:border-gray-700/50 dark:text-gray-400 dark:hover:text-yellow-500" href="tel:+251944245965">
             {{ __('Hotline:') }}
-            <x-lucide-vibrate class="w-5 h-5 text-current" />
+            <x-lucide-phone class="w-5 h-5 text-yellow-500 rotate-45 " />
             {{__('+251944245965') }}
           </a>
           <a class="hs-dark-mode-active:block hidden hs-dark-mode" href="javascript:;" data-hs-theme-click-value="light">

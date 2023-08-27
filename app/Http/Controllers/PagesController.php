@@ -28,7 +28,27 @@ class PagesController extends Controller
             'Solar Panel Production',
         ];
 
-        return view('home', compact('projectFields'));
+        $sliderItems = [
+            [
+                'topic' => 'Explore Our Array of Project Showcases',
+                'explanation' => 'Embark on a journey through our diverse project portfolio, a testament to our accomplishments, expertise, and unwavering commitment to excellence across various domains.',
+                'image' => 'images/services/service015.jpg',
+                'link' => 'projects',
+                'color' => 'yellow'
+            ],
+            [
+                'topic' => 'Funding solutions for construction projects',
+                'explanation' => 'With expertise in project financing, equity investment, and debt financing, we offer flexible and customized options to bring projects to life.  Our aim is to assist clients in achieving their visions by providing tailored funding solutions.',
+                'explanation',
+                'image' => 'images/services/service046.jpg',
+                'link' => 'services',
+                'color' => 'green'
+            ],
+
+        ];
+        $sliderItems = collect($sliderItems);
+
+        return view('home', compact(['projectFields', 'sliderItems']));
     }
     public function maintenance()
     {

@@ -1,6 +1,6 @@
 <x-front-layout>
 
-    <section class="p-8">
+    <section class="p-8 ">
 
         <div class="space-y-8">
             <div>
@@ -61,8 +61,8 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="h-screen flex bg-gray-900 items-center justify-center">
+    <section class="h-auto py-16">
+        <div class="md:h-screen flex bg-gray-900 items-center justify-center py-16">
             <div class="grid grid-cols-12 gap-2 gap-y-4 max-w-6xl">
 
               <!-- Video 1 -->

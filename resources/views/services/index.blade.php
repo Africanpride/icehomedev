@@ -1,7 +1,7 @@
 <x-front-layout>
 
     <section>
-        <x-page-intro primaryColor="yellow" secondaryColor="text-white" svgImage="{{ asset('images/helmet.svg') }}" >
+        <x-page-intro primaryColor="yellow" secondaryColor="text-white" svgImage="{{ asset('images/helmet-white.svg') }}" >
             <x-slot name="title">  {{ __(' Overview of General Construction and Funds Provider Services (EPC and EPC+)') }}</x-slot>
             <x-slot name="content">                             {{ __('We offer many services including residential, commercial, and industrial construction, infrastructure development, renovation, as well as project financing, equity, debt investment for construction projects.') }}</x-slot>
         </x-page-intro>

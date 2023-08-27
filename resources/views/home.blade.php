@@ -3,66 +3,38 @@
         <div class="swiper-container">
             <div class="swiper-wrapper ">
 
-                <div class="swiper-slide z-20 p-4">
-                    <div class="slide-inner slide-bg-image relative"
-                        data-background="{{ asset('images/services/service015.jpg') }}">
+                @foreach ($sliderItems as $slider)
+                    <div class="swiper-slide z-20 p-4">
+                        <div class="slide-inner slide-bg-image relative"
+                        data-background="{{ asset($slider['image']) }}">
                         <div class="absolute inset-0 bg-black/70 ">
-                        </div>
-                        <div class="container px-4 space-y-2 md:space-y-4">
-                            <div data-swiper-parallax="300" class="">
-                                <h2
-                                    class="font-extrabold font-['inter'] text-4xl md:text-6xl tracking-wider uppercase max-w-5xl">
-                                    {{ __('Explore Our Array of Project Showcases') }}
-                                </h2>
                             </div>
-                            <div data-swiper-parallax="400" class="text-[inter] text-base md:text-2xl max-w-6xl">
-                                <p> {{ __('Embark on a journey through our diverse project portfolio, a testament to our accomplishments, expertise, and unwavering commitment to excellence across various domains.') }}
-                                </p>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div data-swiper-parallax="500" class="slide-btns">
-                                <div class="flex gap-4 items-center">
-                                    <x-button
-                                        class="bg-yellow-500 dark:bg-yellow-500 md:w-auto px-5 py-3 text-white">{{ __('Railway Projects') }}</x-button>
-                                    <a href="{{ url('projects') }}" class="theme-btn-s3"><i
-                                            class="fas fa-chevron-circle-right"></i> Get
-                                        Info</a>
+                            <div class="container px-4 space-y-2 md:space-y-4">
+                                <div data-swiper-parallax="300" class="">
+                                    <h2
+                                        class="font-extrabold font-['inter'] text-4xl md:text-6xl tracking-wider uppercase max-w-5xl">
+                                        {{ $slider['topic'] }}
+                                    </h2>
+                                </div>
+                                <div data-swiper-parallax="400" class="text-[inter] text-base md:text-2xl max-w-6xl">
+                                    <p> {{ $slider['explanation'] }}</p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div data-swiper-parallax="500" class="slide-btns">
+                                    <div class="flex gap-4 items-center">
+                                        <x-button
+                                            class="bg-{{ $slider['color'] }}-500 dark:bg-{{ $slider['color'] }}-500 md:w-auto px-5 py-3 text-white">{{ __('Railway Projects') }}</x-button>
+                                        <a href="{{ url( $slider['link']) }}" class="theme-btn-s3"><i
+                                                class="fas fa-chevron-circle-right"></i> Get
+                                            Info</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- end slide-inner -->
                     </div>
-                    <!-- end slide-inner -->
-                </div>
-                <div class="swiper-slide z-20 p-4">
-                    <div class="slide-inner slide-bg-image relative"
-                        data-background="{{ asset('images/services/service046.jpg') }}">
-                        <div class="absolute inset-0 bg-black/70 ">
-                        </div>
-                        <div class="container px-4 space-y-2 md:space-y-4">
-                            <div data-swiper-parallax="300" class="">
-                                <h2
-                                    class="font-extrabold font-['inter'] text-4xl md:text-6xl tracking-wider uppercase max-w-5xl">
-                                    {{ __('Explore Our Array of Project Showcases') }}
-                                </h2>
-                            </div>
-                            <div data-swiper-parallax="400" class="text-[inter] text-base md:text-2xl max-w-6xl">
-                                <p> {{ __('Embark on a journey through our diverse project portfolio, a testament to our accomplishments, expertise, and unwavering commitment to excellence across various domains.') }}
-                                </p>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div data-swiper-parallax="500" class="slide-btns">
-                                <div class="flex gap-4 items-center">
-                                    <x-button href="#"
-                                        class="bg-yellow-500 dark:bg-yellow-500 md:w-auto px-5 py-3 text-white">{{ __('Railway Projects') }}</x-button>
-                                    <a href="{{ url('projects') }}" class="theme-btn-s3"><i
-                                            class="fas fa-chevron-circle-right"></i> Get
-                                        Info</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end slide-inner -->
-                </div>
+                @endforeach
+
             </div>
             <!-- end swiper-wrapper -->
 
@@ -83,8 +55,8 @@
             <!-- Features -->
             <div class="max-w-5xl px-4 py-2 sm:px-6 lg:px-8 lg:py-16 mx-auto">
                 <div class="aspect-16/9">
-                    <img class="w-full object-cover hover:scale-105 transition-transform  delay-700 duration-1000 ease-in-out  rounded-2xl" src="{{ asset('images/services/service018.jpg') }}"
-                        alt="Image Description">
+                    <img class="w-full object-cover hover:scale-105 transition-transform  delay-700 duration-1000 ease-in-out  rounded-2xl"
+                        src="{{ asset('images/services/service018.jpg') }}" alt="Image Description">
                 </div>
             </div>
             <!-- End Features -->
@@ -93,12 +65,13 @@
                 <div class=" flex flex-wrap px-3 pb-5 mx-auto items-center">
                     <div
                         class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-600/30">
-                        <h1 class="sm:text-4xl text-3xl font-bold title-font mb-3 dark:text-white " >Legacy: 47 Years And
+                        <h1 class="sm:text-4xl text-3xl font-bold title-font mb-3 dark:text-white ">Legacy: 47 Years And
                             Excelling</h1>
                         <p class="leading-relaxed text-lg">
                             {{ __('For 47 years, Ice Home Development and Construction has expertly executed projects under many categories. Our legacy is firmly built on four decades of unparalleled construction prowess and innovation.') }}
                         </p>
-                        <a href="{{ route('projects') }}" class="text-yellow-500 inline-flex items-center mt-4  text-lg">Learn More
+                        <a href="{{ route('projects') }}"
+                            class="text-yellow-500 inline-flex items-center mt-4  text-lg">Learn More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -110,9 +83,11 @@
                             Categories</h2> --}}
                         <nav class="flex flex-wrap list-none  ">
                             @foreach ($projectFields as $field)
-                                <li class="md:w-1/3 w-1/2 whitespace-nowrap	flex justify-start items-center py-1 gap-2 text-black ">
+                                <li
+                                    class="md:w-1/3 w-1/2 whitespace-nowrap	flex justify-start items-center py-1 gap-2 text-black ">
                                     <x-lucide-check-circle-2 class="text-yellow-500 h-4 w-4" />
-                                    <a href="{{  route('projects') }}" class="text-gray-500  hover:text-yellow-500 text-sm capitalize leading-snug whitespace-nowrap font-bold ">{{ $field }}</a>
+                                    <a href="{{ route('projects') }}"
+                                        class="text-gray-500  hover:text-yellow-500 text-sm capitalize leading-snug whitespace-nowrap font-bold ">{{ $field }}</a>
                                 </li>
                             @endforeach
                         </nav>
@@ -124,8 +99,8 @@
             <!-- Features -->
             <div class="max-w-5xl px-4 py-2 sm:px-6 lg:px-8 lg:py-16 mx-auto">
                 <div class="aspect-16/9">
-                    <img class="w-full object-cover hover:scale-105 transition-transform  delay-700 duration-1000 ease-in-out  rounded-2xl" src="{{ asset('images/group.jpg') }}"
-                        alt="Image Description">
+                    <img class="w-full object-cover hover:scale-105 transition-transform  delay-700 duration-1000 ease-in-out  rounded-2xl"
+                        src="{{ asset('images/group.jpg') }}" alt="Image Description">
                 </div>
             </div>
             <!-- End Features -->
@@ -139,7 +114,7 @@
             <div class="relative bg-gray-900 bg-opacity-75">
                 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
                     <div class="flex flex-col items-center justify-between xl:flex-row">
-                        <div class="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
+                        <div class="w-full  mb-12 xl:mb-0 xl:pr-16 xl:w-8/12">
 
                             <h2
                                 class=" text-3xl sm:text-4xl text-yellow-500 font-extrabold font-['inter'] uppercase tracking-tight dark:text-slate-50 mb-3">
@@ -155,8 +130,8 @@
                                 <x-lucide-chevron-right class="w-5 h-5 text-current font-extrabold" />
                             </a>
                         </div>
-                        <div class="w-full max-w-xl xl:px-8 xl:w-5/12">
-                            <div class="bg-white rounded shadow-2xl p-7 sm:p-10">
+                        <div class="w-full max-w-xl md:px-4 md:w-4/12 ">
+                            <div class="bg-white shadow-2xl p-7 sm:p-10 rounded-2xl">
                                 <h3 class="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
                                     {{ __('Sign up for updates') }}
                                 </h3>

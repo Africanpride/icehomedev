@@ -7,7 +7,7 @@
             </strong>
 
             <a class="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-yellow-600 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
-                href="/">
+                href="{{ $route ?? route('contact') }}">
                 <span class="text-sm font-medium"> {{  $action }} </span>
 
                 <x-lucide-arrow-right-from-line class="w-4 h-4 text-current" />
